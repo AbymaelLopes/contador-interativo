@@ -2,13 +2,13 @@ const soma = document.getElementById('adicionar')
 const subtracao = document.getElementById('subtrair')
 const reset = document.getElementById('resetar')
 const contador = document.getElementById('contador')
-const incrDecr = document.getElementById('incr-decr')
+const input = document.getElementById('incr-decr')
 
 let cont = 0;
 
 soma.addEventListener('click', () => {
     
-    let inputValue = parseInt(incrDecr.value)
+    let inputValue = parseInt(input.value)
     cont = cont + inputValue
     
     contador.innerHTML = cont
@@ -16,7 +16,7 @@ soma.addEventListener('click', () => {
 
 subtracao.addEventListener('click', () => {
     
-    let inputValue = parseInt(incrDecr.value)
+    let inputValue = parseInt(input.value)
     if(cont <= 0){
         cont = 0
     }else{
@@ -30,4 +30,5 @@ reset.addEventListener('click', () => {
     cont = 0
 
     contador.innerHTML = 0
+    input.value = 1
 })
