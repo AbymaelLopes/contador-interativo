@@ -17,7 +17,7 @@ body{
     
     .conteiner{
         width: 15rem;
-        height: 90%;
+        height: 90vh;
         border: 1px solid greenyellow;
         border-radius: 1rem;
         overflow: hidden;
@@ -67,7 +67,7 @@ body{
 @media screen and (min-width: 300px){
     .conteiner{
         border: 1px solid yellowgreen;
-        height: 90%;
+        height: 90vh;
         border-radius: 1rem;
         width: 30rem;
         display: flex;
